@@ -6,7 +6,9 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            UserRegistration.firstName();
+            //UserRegistration.firstName();
+            //UserRegistration.lastName();
+            UserRegistration.Validemail();
         }
     }
 }

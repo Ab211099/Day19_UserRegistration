@@ -26,7 +26,7 @@ namespace UserRegistration
             }   
         }
 
-        public void lastName()
+        public static void lastName()
         {
 
             Console.WriteLine ("Enter the last name: ");
@@ -39,6 +39,24 @@ namespace UserRegistration
             {
                 Console.WriteLine("Entered name is Invalid\n for valid name please give first character in capital and give minimum 3 character");
                 lastName();
+            }
+        }
+        public static void Validemail()
+        {
+            Console.WriteLine("Enter email");
+            string mail = Console.ReadLine();
+            string pattern = "^[a-zA-Z0-9]{3,7}([._+-][0-9a-zA-Z]{1,7})*@[0-9a-zA-Z]+[.]?([a-zA-Z]{2,4})+[.]?([a-zA-Z]{2,3})*$";
+            if (Regex.IsMatch(mail, pattern))
+            {
+                Console.WriteLine("entered email is valid");
+
+                Validemail();
+            }
+            else
+            {
+                Console.WriteLine("entered email invalid");
+
+                Validemail();
             }
         }
     }
