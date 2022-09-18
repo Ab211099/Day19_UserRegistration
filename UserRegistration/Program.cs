@@ -8,7 +8,8 @@ namespace UserRegistration
         {
             //UserRegistration.firstName();
             //UserRegistration.lastName();
-            UserRegistration.Validemail();
+            //UserRegistration.Validemail();
+            UserRegistration.MobileNumber();
         }
     }
 }
