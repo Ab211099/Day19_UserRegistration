@@ -11,7 +11,8 @@ namespace UserRegistration
             //UserRegistration.Validemail();
             //UserRegistration.MobileNumber();
             //UserRegistration.ruleOne();
-            UserRegistration.ruleThird();
+            //UserRegistration.ruleThird();
+            UserRegistration.ruleFourth();
         }
     }
 }

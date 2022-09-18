@@ -119,5 +119,21 @@ namespace UserRegistration
                 Console.WriteLine("Third Rule is invalid, Try another.");
             }
         }
+        public static void ruleFourth()
+        {
+            Console.WriteLine("Enter value for fourth rule: ");
+            String fourth = Console.ReadLine();
+            string pattern = "^[a-zA-Z0-9@$!%*#?&]{1,}[a-zA-Z0-9@$!%*#?&]{7,}$";
+
+
+            if (Regex.IsMatch(fourth,pattern))
+            {
+                Console.WriteLine("Fourth Rule is valid");
+            }
+            else
+            {
+                Console.WriteLine("Fourth Rule is invalid, Try another.");
+            }
+        }
     }
 }
