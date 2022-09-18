@@ -72,5 +72,22 @@ namespace UserRegistration
                 MobileNumber();
             }
         }
+
+        public static void ruleOne()
+        {
+            Console.WriteLine ("Enter characters for first rule: ");
+            String one = Console.ReadLine();
+            string pattern = "^[a-zA-Z]{8,}$";
+
+
+            if (Regex.IsMatch(one, pattern))
+            {
+                Console.WriteLine ("First Rule is valid");
+            }
+            else
+            {
+                Console.WriteLine ("First Rule is invalid, Try another.");
+            }
+        }
     }
 }
