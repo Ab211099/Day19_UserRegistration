@@ -89,5 +89,21 @@ namespace UserRegistration
                 Console.WriteLine ("First Rule is invalid, Try another.");
             }
         }
+        public static void ruleTwo()
+        {
+            Console.WriteLine ("Enter characters for second rule: ");
+            String one = Console.ReadLine();
+            string pattern = "^[A-Z]{1,}[a-zA-Z]{7,}$";
+
+
+            if (Regex.IsMatch(one,pattern))
+            {
+                Console.WriteLine("Second Rule is valid");
+            }
+            else
+            {
+                Console.WriteLine ("Second Rule is invalid, Try another.");
+            }
+        }
     }
 }

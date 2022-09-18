@@ -10,7 +10,8 @@ namespace UserRegistration
             //UserRegistration.lastName();
             //UserRegistration.Validemail();
             //UserRegistration.MobileNumber();
-            UserRegistration.ruleOne();
+            //UserRegistration.ruleOne();
+            UserRegistration.ruleTwo();
         }
     }
 }
